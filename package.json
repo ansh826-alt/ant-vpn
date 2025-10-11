@@ -1,0 +1,56 @@
+{
+  "name": "ant-vpn",
+  "version": "1.0.0",
+  "description": "Aplicación VPN de escritorio",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "package:mac": "electron-builder build --mac",
+    "package:win": "electron-builder build --windows",
+    "package:linux": "electron-builder build --linux"
+  },
+  "keywords": [
+    "vpn",
+    "electron",
+    "security"
+  ],
+  "author": "Carlos Mur",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^38.1.2",
+    "electron-builder": "^26.0.12",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsdoc": "^60.3.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "sudo-prompt": "^9.2.1"
+  },
+  "build": {
+    "appId": "com.cmurestudillos.antvpn",
+    "productName": "Ant VPN",
+    "directories": {
+      "output": "release/"
+    },
+    "extraResources": [
+      {
+        "from": "vpn-configs",
+        "to": "vpn-configs"
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "src/assets/icon.icns"
+    },
+    "win": {
+      "icon": "src/assets/icon.ico"
+    },
+    "linux": {
+      "icon": "src/assets/icon.png",
+      "category": "Development"
+    }
+  }
+}
